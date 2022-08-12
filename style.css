@@ -1,4 +1,24 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color: #E7F6F2;
+}
+
+.container {
+    background-color: #A5C9CA;
+    border-radius: 20px;
+    padding: 20px;
+    width: 40%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+
+input[type='range'] {
+    vertical-align: middle;
+}
+
 
 

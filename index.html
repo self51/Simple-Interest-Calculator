@@ -1,16 +1,46 @@
-<html>
-    <head>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+    <title>Simple Interest Calculator</title>
+</head>
+<body>
+
+    <div class="container">
+
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        <p>
+            Simple Interest Calculator, will compute the interest
+            <br>one can earn given the amount you wish to save,
+            <br>the number of years you can keep it invested
+            <br>and the interest rate the bank would pay you.
+        </p>
+
+        <p>Amount <input id="principal"></p>
+        <p>Interest Rate <input type="range" id="rate" min="1" max="15" step="0.25" onchange="change()"> <span id="result"></span></p>
+        <p>No. of Years <input type="number"  id="years"></p>
 
         <button onclick="compute()">Compute</button>
-    </body>
+
+        <p id="principal_val"></p>
+        <p id="rate_val"></p>
+        <p id="interest_val"></p>
+        <p id="years_val"></p>
+
+        <footer>
+
+            &#169; Everyone Can Get Rich
+            <br>This Calculator belongs to Self
+
+        </footer>
+    </div>
+
+</body>
 </html>
+
